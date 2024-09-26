@@ -1,9 +1,13 @@
 # By Javier Perez Mota
 
+import sys
+import os
 import tkinter as tk
 from tkinter import messagebox
 import qrcode
 from PIL import ImageTk, Image
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
 class QRCodeGeneratorApp:
     def __init__(self, master):
